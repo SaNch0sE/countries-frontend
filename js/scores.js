@@ -4,7 +4,7 @@ function savAndMoveTo(data, path) {
 	location.href = path;
 }
 ajax('getScores', null, (data) => {
-	console.log(data);
+	// console.log(data);
 	if (data.data !== 'No users') {
 		let parent = document.getElementById('names');
 		for (let i = 0; i < data.length; i++) {
@@ -22,6 +22,15 @@ ajax('getScores', null, (data) => {
 				parent.append(li);
 			}
 		}
+	} else if (data === undefined || data.data === undefined) {
+		let parent = document.getElementById('names');
+		let li = document.createElement('th');
+		li.innerHTML = "Помилка з'єднання";
+		parent.append(li);
+		parent = document.getElementById('scores');
+		li = document.createElement('th');
+		li.innerHTML = '-';
+		parent.append(li);
 	} else {
 		let parent = document.getElementById('names');
 		let li = document.createElement('th');
