@@ -1,5 +1,6 @@
 let score = localStorage.getItem("score");
 let nick = localStorage.getItem("name");
+console.log('nick', localStorage.getItem("name"));
 let data = {"name": nick, "score": score};
 document.getElementById('return').innerText = score;
 document.getElementById('name').innerText = nick;

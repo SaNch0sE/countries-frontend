@@ -1,13 +1,13 @@
 @font-face {
-	font-family: '8BITWONDERNominal';
-	src: url("../assets/8-bit_wo-webfont.woff") format("woff"),
-	url("../assets/8-bit_wo-webfont.otf") format("opentype");
+	font-family: 'regular';
+	src: url("../assets/cyrillic_pixel-7.ttf");
 }
 
 body{
-    background-color: rgb(29, 32, 32);
+	background: url("../assets/img/8-bit-min.png");
+	background-size: 95%;
     overflow: hidden;
-	font-family: '8BITWONDERNominal';
+	font-family: 'regular';
 	font-weight: normal;
 	font-style: normal;
 	-moz-user-select: none;
@@ -17,8 +17,8 @@ body{
 }
 
 .worldmap{
-	fill:white;
-	stroke:black;
+	fill:rgba(0, 0, 0, 0.99);
+	stroke:white;
 	stroke-width:0.5px;
 	position: absolute;
 }
@@ -39,7 +39,6 @@ body{
 	display: flex;
 	flex-direction: row;
 	position: absolute;
-	font-family: '8BITWONDERNominal';
 	font-weight: normal;
 	font-style: normal;
 	margin-left: 40%;
@@ -50,7 +49,7 @@ body{
 	position: absolute;
 	color: white;
 	margin-left: 110%;
-	margin-top: -25%;
+	margin-top: -40%;
 }
 
 /*Стили для карты мира*/
@@ -103,7 +102,7 @@ button {
 	display: flex;
 	flex-direction: row;
 	margin-left: 7px;
-	margin-top: 5%;
+	margin-top: -4px;
 }
 	/*Конец кнопки поиска города*/
 
@@ -121,7 +120,7 @@ button {
 	border-top-left-radius: 25px;
 	border-bottom-left-radius: 25px;
 	border-top-right-radius: 20px;
-	font-size: 18px;
+	font-size: 22px;
 }
 #text{
 	color: black;
