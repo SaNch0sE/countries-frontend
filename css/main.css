@@ -15,11 +15,9 @@ body{
 }
 button{
     font-family: 'regular';
-}
-h3{
-    font-family: 'regular';
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 8px;
 }
 h4{
     margin: 0;
