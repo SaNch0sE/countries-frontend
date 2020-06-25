@@ -1,9 +1,4 @@
 @font-face {
-    font-family: '8BITWONDERNominal';
-    src: url("../assets/8-bit_wo-webfont.woff") format("woff"),
-    url("../assets/8-bit_wo-webfont.otf") format("opentype");
-}
-@font-face {
     font-family: 'regular';
     src: url("../assets/cyrillic_pixel-7.ttf");
 }
@@ -19,7 +14,7 @@ body{
     padding-top: 2%;
 }
 h3{
-    font-family: '8BITWONDERNominal';
+    font-family: 'regular';
     font-weight: normal;
     font-style: normal;
 }
@@ -41,7 +36,7 @@ h4{
     border:1px solid #000; 
 }
 input{
-    font-family: regular;
+    font-family: 'regular';
     width: 30%;
     display: flex;
     flex-direction: row;
